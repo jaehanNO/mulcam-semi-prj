@@ -10,7 +10,7 @@
 
 
 <%
-	response.sendRedirect("inveInform.do");
+	response.sendRedirect("login.do");
 %>
 
 </body>
