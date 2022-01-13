@@ -1,5 +1,7 @@
 package mul.proj.ant.Dto;
 
-public class bbsDto {
+import java.io.Serializable;
+
+public class bbsDto implements Serializable{
 
 }

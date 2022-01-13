@@ -13,10 +13,10 @@ public class userController {
 
 	private static Logger logger = LoggerFactory.getLogger(userController.class);
 	
-	@RequestMapping(value = "login.do", method = RequestMethod.GET)
+	@RequestMapping(value = "home.do", method = RequestMethod.GET)
 	public String login() {
-		logger.info("MemberController login() " + new Date());		
-		return "login";
-	//	return "loginCSS";
+		logger.info("userController login() " + new Date());		
+		return "home";
+
 	}
 }
