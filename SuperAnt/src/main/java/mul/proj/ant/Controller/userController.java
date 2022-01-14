@@ -12,8 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import mul.proj.ant.Service.userService;
 
-
-
 @Controller
 public class userController {
 
@@ -23,12 +21,30 @@ public class userController {
 	userService service;
 	
 	@RequestMapping(value = "home.do", method = RequestMethod.GET)
-	public String login() {
-		logger.info("userController login() " + new Date());		
+	public String home() {
+		logger.info("userController home() " + new Date());		
 		return "home";
 
 	}
 	
+//	home.jsp (login 버튼 클릭) -> login.jsp 
+	@RequestMapping(value = "login.do", method = RequestMethod.GET)
+	public String login() {
+		logger.info("userController login() " + new Date());
+		System.out.println("로그인 페이지 이동");
+		return "user/login";
+
+	}
+	
+//	home.jsp (signup 버튼 클릭) -> signup.jsp 
+	@RequestMapping(value = "signup.do", method = RequestMethod.GET)
+	public String signup() {
+		
+		logger.info("userController signup() " + new Date());	
+		System.out.println("회원가입 페이지 이동");
+		return "user/signup";
+
+	}
 	
 	
 	

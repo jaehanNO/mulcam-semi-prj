@@ -183,7 +183,7 @@
                     <button
                       type="button"
                       class="btn btn-secondary signinBtn"
-                      onclick="goToSignUp()"
+                      onclick="goSignUp()"
                     >
                       회원가입
                     </button>
@@ -353,17 +353,15 @@
         </script> -->
 
       <!-- 로그인, 회원가입 버튼 클릭시 페이지 이동 -->
-      <script>
-        // 로그인 페이지로 이동
-        function goToLogin() {
-          location.href = './components/login.html';
-        }
-
-        // 회원가입 페이지로 이동
-        function goToSignUp() {
-          location.href = './components/signup.html';
-        }
-      </script>
+     <script type="text/javascript">
+     	function goToLogin(){
+     		alert('goTo')
+     		location.href = "login.do";	//userController->login.jsp
+     	}
+     	function goSignUp(){
+     		location.href = "signup.do";//userController->signup.jsp
+     	}
+     </script>
     </div>
   </body>
 </html>

@@ -20,8 +20,8 @@ public class bbsController {
 	
 	@RequestMapping(value = "bbswrite.do", method = RequestMethod.GET)
 	public String bbswrite() {
-		logger.info("BbsController bbswrite() " + new Date());
-		
+		logger.info("bbsController bbswrite() " + new Date());
+		System.out.println("글작성 페이지로 이동");
 		return "bbswrite";
 	}
 }
