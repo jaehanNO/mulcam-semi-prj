@@ -4,9 +4,9 @@
         
 <mapper namespace="bbs">
 
-	<insert id="writeTalkBbs" parameterType="mul.proj.ant.bbsDto">
+<!-- 	<insert id="writeTalkBbs" parameterType="mul.proj.ant.bbsDto">
 		INSERT INTO STOCKTALK(takINDEX, takTITLE, takCONTENT)
 		VALUES(takINDEX_STOCKTALK.NEXTVAL , #{talk_title}, #{talk_content})	
-	</insert>
+	</insert> -->
 	
 </mapper>

@@ -4,11 +4,11 @@
         
 <mapper namespace="user">
 
-<select id="login" parameterType="mul.proj.ant.bbsDto" 
-	resultType="mul.camp.a.dto.MemberDto">
+<!-- <select id="login" parameterType="mul.proj.ant.Dto.bbsDto" 
+	resultType="mul.proj.ant.Dao.bbsDao">
 	SELECT userID, userPW
 	FROM MEMBER
 	WHERE userID=#{id} AND userPW=#{pwd}
-</select>
+</select> -->
 
 </mapper>
