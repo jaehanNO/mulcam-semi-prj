@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%-- 
+<%
+// session에서 사용자 정보를 산출
+userDto user = (userDto)request.getSession().getAttribute("login");
+%> --%>    
 
 <!DOCTYPE html>
 <html lang="en">
