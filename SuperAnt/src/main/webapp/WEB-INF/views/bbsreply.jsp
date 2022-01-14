@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+    
+<%-- <%
+	bbsDto bbs = (bbsDto)request.getAttribute("bbs");
+
+	userDto mem = (userDto)request.getSession().getAttribute("login");
+%>  --%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,7 +42,7 @@
             type="text"
             class="form-control"
             id="title"
-            placeholder=""
+            <%--  value="<%=bbs.getTitle() %>" --%>
             name="talk_title"
             id="talk_title"
           />
@@ -45,7 +53,7 @@
             type="text"
             class="form-control"
             id="title"
-            placeholder=""
+            <%--  value="<%=bbs.getId() %>" --%>
             name="user_id"
             id="user_id"
             readonly
@@ -84,7 +92,7 @@
             type="text"
             class="form-control"
             id="title"
-            placeholder=""
+            <%-- value="<%=mem.getId() %>" --%>
             name="user_id"
             id="user_id"
             readonly
