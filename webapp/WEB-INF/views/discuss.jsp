@@ -250,7 +250,19 @@
                         %>
                         </tbody>
                     </table>
+                    <div class="search-nav-bar">
+                        <form action="" method="get" class="search-form">
+                            <select name="" id="" class="form-select search-select">
+                                <option selected value="title">제목</option>
+                                <option value="writer">작성자</option>
+                                <option value="content">내용</option>
+                            </select>
+                            <input type="text" class="form-control search-input" />
+                            <button type="button" class="btn btn-secondary">검색</button>
+                        </form>
+                    </div>
                     <div class="btn-grp" role="group" aria-label="Basic example">
+
                         <button
                                 type="button"
                                 class="btn btn-outline-primary"

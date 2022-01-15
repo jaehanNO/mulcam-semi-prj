@@ -198,7 +198,72 @@
         <!-- Main Contents -->
         <article>
             <div id="app">
-                <h1>투자 정보</h1>
+                <h2>투자 정보</h2>
+                <div class="board">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">작성일</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <%
+                            if (stockTalkList == null || stockTalkList.size() == 0) {
+                        %>
+                        <tr>
+                            <td colspan="4">작성된 글이 없습니다.</td>
+                        </tr>
+                        <%
+                        } else {
+
+                            for (int i = 0; i < stockTalkList.size(); i++) {
+                                StockTalkDto dto = stockTalkList.get(i);
+                        %>
+                        <tr>
+                            <th><%= i+1%></th>
+                            <td>
+                                <%= dto.getTakTITLE()%>
+                            </td>
+                            <td>
+                                <%= dto.getTakUSERID()%>
+                            </td>
+                            <td>
+                                <%= dto.getTakDATE()%>
+                            </td>
+                        </tr>
+
+                        <%
+
+                                }
+                            }
+                        %>
+                        </tbody>
+                    </table>
+                    <div class="search-nav-bar">
+                        <form action="" method="get" class="search-form">
+                            <select name="" id="" class="form-select search-select">
+                                <option selected value="title">제목</option>
+                                <option value="writer">작성자</option>
+                                <option value="content">내용</option>
+                            </select>
+                            <input type="text" class="form-control search-input" />
+                            <button type="button" class="btn btn-secondary">검색</button>
+                        </form>
+                    </div>
+                    <div class="btn-grp" role="group" aria-label="Basic example">
+
+                        <button
+                                type="button"
+                                class="btn btn-outline-primary"
+                                onclick="goToNewPost()"
+                        >
+                            글 쓰기
+                        </button>
+                    </div>
+                </div>
             </div>
         </article>
     </section>
