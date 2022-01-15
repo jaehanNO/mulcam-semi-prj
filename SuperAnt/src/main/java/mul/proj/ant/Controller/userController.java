@@ -31,7 +31,7 @@ public class userController {
 	@RequestMapping(value = "login.do", method = RequestMethod.GET)
 	public String login() {
 		logger.info("userController login() " + new Date());
-		System.out.println("로그인 페이지 이동");
+	
 		return "user/login";
 
 	}
@@ -41,11 +41,9 @@ public class userController {
 	public String signup() {
 		
 		logger.info("userController signup() " + new Date());	
-		System.out.println("회원가입 페이지 이동");
-		return "user/signup";
-
-	}
 	
+		return "user/signup";
+	}
 	
 	
 //	@RequestMapping(value = "loginAf.do", method = RequestMethod.POST)

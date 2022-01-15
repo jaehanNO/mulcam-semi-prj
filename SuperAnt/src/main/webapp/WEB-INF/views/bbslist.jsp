@@ -358,7 +358,7 @@
       <script>
         // 새글 작성 버튼 클릭 -> 글 작성 페이지로 이동
         function goToNewPost(){
-        	location.href = "bbswrite.do?";
+        	location.href = "bbswrite.do";
         }
         
         

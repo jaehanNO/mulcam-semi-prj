@@ -236,68 +236,8 @@
               </p>
             </div>
 
-            <form class="float-end sign-in-on-main" action="" method="post">
-              <div class="sign-in-title">
-                회원으로 등록하시면 <br />
-                더 많은 서비스를 사용할 수 있습니다.
-              </div>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="사용하실 ID를 입력하세요."
-                  name="user_id"
-                  id="user_id"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="사용하실 비밀번호를 입력하세요."
-                  name="user_pw"
-                  id="user_pw"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="비밀번호 확인"
-                  name="user_pw_check"
-                  id="user_pw_check"
-                />
-              </div>
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="이메일 주소"
-                  name="user_emailid"
-                  id="user_emailid"
-                />
-                <span class="input-group-text">@</span>
-                <select
-                  class="form-select form-select-sm"
-                  name="user_emailweb"
-                  id="user_emailweb"
-                >
-                  <option selected value="gmail.com">gmail.com</option>
-                  <option value="naver.com">naver.com</option>
-                  <option value="outlook.com">outlook.com</option>
-                </select>
-              </div>
-              <div class="d-grid gap-2 col mx-auto">
-                <button class="btn btn-primary" type="submit">회원 가입</button>
-                <button
-                  class="btn btn-secondary"
-                  type="button"
-                  onclick="goToLogin()"
-                >
-                  기존 계정으로 로그인
-                </button>
-              </div>
-            </form>
+           
+              
           </div>
         </article>
       </section>
@@ -307,16 +247,20 @@
         <article>
           <div id="app"></div>
         </article>
-      </section>
-
+      </section>	
+    
       <!-- footer -->
       <footer>
         <div class="footer-section">
           <ul class="footer-menu float-start">
-            <li><a href="./components/stock-calendar.html">공모주 일정</a></li>
-            <li><a href="./components/inve-inform.html">투자정보</a></li>
-            <li><a href="#">매매</a></li>
-            <li><a href="./components/digi-notice.html">전자공시정보</a></li>
+            <li> <a href="stCalender.do">공모주 일정</a></li>
+            <li><a href="stReplt.do">전자공시</a></li>
+            <li><a href="stInform.do">투자정보</a></li>
+            <li><a href="stTalk.do">주식토론</a></li>
+            <li> <a href="reCalender.do">청약 일정</a></li>
+            <li><a href="reReplt.do">전자공시</a></li>
+            <li><a href="reInform.do">투자정보</a></li>
+            <li><a href="reTalk.do">부동산토론</a></li>
           </ul>
           <ul class="footer-menu float-end">
             <li><a href="#">FAQ</a></li>
@@ -355,7 +299,6 @@
       <!-- 로그인, 회원가입 버튼 클릭시 페이지 이동 -->
      <script type="text/javascript">
      	function goToLogin(){
-     		alert('goTo')
      		location.href = "login.do";	//userController->login.jsp
      	}
      	function goSignUp(){

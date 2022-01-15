@@ -4,7 +4,8 @@
 <%
 // session에서 사용자 정보를 산출
 userDto user = (userDto)request.getSession().getAttribute("login");
-%> --%>    
+%> --%>  
+<% String str = (String)request.getAttribute("link"); %> 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +32,9 @@ userDto user = (userDto)request.getSession().getAttribute("login");
   <body>
     <div class="post-box">
       <h2>새로운 글 작성하기</h2>
-      <form action="" method="get">
+      <form action="writeAf.do" method="get">
+      <input type="hidden" name="linkStr" value="<%=str%>">
+      
         <div class="mb-3">
           <label for="" class="form-label">제목</label>
           <input
@@ -54,22 +57,18 @@ userDto user = (userDto)request.getSession().getAttribute("login");
             id="user_id"
             readonly
           />
-        </div>
+        </div>	
         <div class="mb-3">
           <label for="" class="form-label">내용</label>
           <textarea class="form-control" id="talk_content" name="talk_content" rows="10"></textarea>
         </div>
 
         <div class="btn-grp" role="group" aria-label="Basic example">
-          <button type="submit" class="btn btn-outline-primary">저장</button>
-          <button type="reset" class="btn btn-outline-secondary">다시 쓰기</button>
-          <button type="button" class="btn btn-outline-danger" onclick="goBack()">취소</button>
+         <input type="submit" value="글쓰기">
         </div>
       </form>
     </div>
 
-    <script>
-      const goBack = () => history.back();
-    </script>
+   
   </body>
 </html>

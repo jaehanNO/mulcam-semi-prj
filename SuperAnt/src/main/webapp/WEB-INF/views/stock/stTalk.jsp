@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <title>슈퍼개미 : 부동산정보방</title>
+    <title>슈퍼개미 : 주식토론방</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
